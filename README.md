@@ -1,12 +1,51 @@
-# React + Vite
+# React Todo List with Context API and Local Storage
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple Todo List application built using React, leveraging the Context API for state management and Local Storage for persistent data storage.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **Add Tasks:** Easily add new tasks to your todo list.
+* **Mark Tasks as Completed:** Toggle the completion status of tasks.
+* **Delete Tasks:** Remove tasks from the list.
+* **Persistent Data:** Tasks are saved to Local Storage, ensuring data persistence across page reloads.
+* **Context API:** Utilizes React's Context API for efficient state management, avoiding prop drilling.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **React:** JavaScript library for building user interfaces.
+* **Context API:** React's built-in state management solution.
+* **Local Storage:** Browser API for storing data persistently.
+
+## Setup and Installation
+
+1.  **Clone the repository:**
+
+    ```bash
+    git clone <repository_url>
+    ```
+
+2.  **Navigate to the project directory:**
+
+    ```bash
+    cd <project_directory>
+    ```
+
+3.  **Install dependencies:**
+
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+4.  **Start the development server:**
+
+    ```bash
+    npm start
+    # or
+    yarn start
+    ```
+
+5.  Open your browser and navigate to `http://localhost:3000`.
+
+## Project Structure
