@@ -24,28 +24,4 @@ This project is a simple Todo List application built using React, leveraging the
     git clone <repository_url>
     ```
 
-2.  **Navigate to the project directory:**
 
-    ```bash
-    cd <project_directory>
-    ```
-
-3.  **Install dependencies:**
-
-    ```bash
-    npm install
-    # or
-    yarn install
-    ```
-
-4.  **Start the development server:**
-
-    ```bash
-    npm start
-    # or
-    yarn start
-    ```
-
-5.  Open your browser and navigate to `http://localhost:3000`.
-
-## Project Structure
