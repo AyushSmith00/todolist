@@ -1,6 +1,6 @@
 # React Todo List with Context API and Local Storage
 
-This project is a Todo List application built using React, leveraging the Context API for state management and Local Storage for persistent data storage.
+This project is a simple Todo List application built using React, leveraging the Context API for state management and Local Storage for persistent data storage.
 
 ## Features
 
