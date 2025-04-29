@@ -4,17 +4,25 @@ import { useTodo } from '../contexts/TodoContext';
 function TodoItem({ todo }) {
   const [isTodoEditable, setIsTodoEditable] = useState(false)
   const [todoMsg, setTodoMsg] = useState(todo.todo)
-  const {updateTodo, deleteTodo, toggleComplete} = useTodo()
+  const {updateTodo, deleteTodo, toggleComplete , MoveUp , MoveDown} = useTodo()
 
   const editTodo = () => {
-    updateTodo(todo.id, {...todo, todo: todoMsg})
+    updateTodo(todo.id, {...todo, c: todoMsg})
+
+    console.log(updateTodo)
     setIsTodoEditable(false)
   }
   const toggleCompleted = () => {
-    //console.log(todo.id);
     toggleComplete(todo.id)
   }
 
+  const Moveup = () =>{
+    MoveUp(todo.id);
+  }
+
+  const Movedown = () =>{
+    MoveDown(todo.id);
+  }
   return (
       <div
           className={`flex border border-black/10 rounded-lg px-3 py-1.5 gap-x-3 shadow-sm shadow-white/50 duration-300  text-black ${
@@ -57,6 +65,21 @@ function TodoItem({ todo }) {
           >
               ❌
           </button>
+
+          <button
+              className="inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0"
+              onClick={() => Moveup(todo.id)}
+          >
+              ⬆️
+          </button>
+
+          <button
+              className="inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0"
+              onClick={() => Movedown(todo.id)}
+          >
+            ⬇️
+          </button>
+
       </div>
   );
 }
