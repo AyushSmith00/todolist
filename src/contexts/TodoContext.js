@@ -13,6 +13,7 @@ export const TodoContext = createContext({
     MoveUp: (id) => {},
     MoveDown: (id) => {},
     deleteTodo: (id) => {},
+    clearTodo: () => {},
     toggleComplete: (id) => {},
 })
 
