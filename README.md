@@ -7,6 +7,9 @@ This project is a simple Todo List application built using React, leveraging the
 * **Add Tasks:** Easily add new tasks to your todo list.
 * **Mark Tasks as Completed:** Toggle the completion status of tasks.
 * **Delete Tasks:** Remove tasks from the list.
+* **Up Tasks:** Move tasks up in the list.
+* **Down Tasks:** Move tasks Down in the list.
+* **Clear Tasks:** clear the whole list.
 * **Persistent Data:** Tasks are saved to Local Storage, ensuring data persistence across page reloads.
 * **Context API:** Utilizes React's Context API for efficient state management, avoiding prop drilling.
 
