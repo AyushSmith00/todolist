@@ -16,6 +16,10 @@ function App() {
 
   }
 
+  const clearTodo = () =>{
+    setTodos([])
+  }
+
   const MoveUp = (id) => {
      setTodos(prevTodos => {
     const todoToMove = prevTodos.find(t => t.id === id);
@@ -62,6 +66,7 @@ function App() {
 
 
   return (
+    <>
     <TodoProvider value={{todos, addTodo, updateTodo, deleteTodo, toggleComplete , MoveUp , MoveDown}}>
       <div className="bg-[#172842] min-h-screen py-8">
                 <div className="w-full max-w-2xl mx-auto shadow-md rounded-lg px-4 py-3 text-white">
@@ -83,6 +88,9 @@ function App() {
                 </div>
             </div>
     </TodoProvider>
+
+    <button onClick={clearTodo}>clear</button>
+    </>
   )
 }
 
